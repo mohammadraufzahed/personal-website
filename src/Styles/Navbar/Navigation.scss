@@ -1,0 +1,59 @@
+.main_menu {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .Navbar_header_menu {
+    z-index: 25;
+    position: fixed;
+    width: 100%;
+    height: 11.5%;
+  }
+}
+@media screen and (min-width: 993px) {
+  .Navbar_header_menu {
+    height: 11.5%;
+    background: rgba(0, 0, 0, 0.8);
+  }
+  .hamburger_menu {
+    display: none;
+  }
+
+  .main_menu {
+    display: block;
+    z-index: 35;
+    ul {
+      height: 30px;
+      li {
+        font-size: 1.8vw !important;
+      }
+    }
+    li::before {
+      content: "";
+      display: block;
+    }
+  }
+}
+@media screen and (min-width: 1201px) {
+  .Navbar_header_menu {
+    height: 12.5%;
+  }
+  .main_menu {
+    ul {
+      li {
+        font-size: 1.6vw !important;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1440px) {
+  .Navbar_header_menu {
+    height: 10.5%;
+  }
+  .main_menu {
+    ul {
+      li {
+        font-size: 1.4vw !important;
+      }
+    }
+  }
+}
