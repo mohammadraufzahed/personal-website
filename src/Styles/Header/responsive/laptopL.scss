@@ -1,0 +1,68 @@
+@media screen and (min-width: 1201px) {
+  .header_corner_information {
+    height: 7vw;
+    h3:nth-of-type(1) {
+      height: 3.5vw;
+    }
+    figure {
+      display: none;
+    }
+    h3:nth-of-type(2) {
+      padding-left: 60px;
+    }
+  }
+  .header_corner_image {
+    top: -8vw;
+    right: -8.9vw;
+  }
+  .header_corner {
+    height: 100%;
+  }
+  .header_corner_leftbottom {
+    div:nth-of-type(1) {
+      left: -19vw;
+    }
+    div:nth-of-type(2) {
+      h3 {
+        font-size: 2vw;
+        span {
+          font-size: 3.2vw;
+        }
+      }
+      h5 {
+        font-size: 1.6vw;
+      }
+    }
+  }
+  .header_main_left_piece {
+    margin-top: -24vw;
+    figure {
+      img {
+        width: 9.5vw;
+        height: 9.5vw;
+      }
+    }
+    h2 {
+      font-size: 3.3vw;
+      span {
+        font-size: 5vw;
+      }
+    }
+  }
+  .header_name_information {
+    margin-left: 3vw;
+    h1 {
+      font-size: 6vw;
+    }
+    figure {
+      margin-left: 5vw;
+      img {
+        width: 33vw;
+        height: 45vw;
+      }
+    }
+  }
+  .header_corners_page_number {
+    height: 6.8vw;
+  }
+}

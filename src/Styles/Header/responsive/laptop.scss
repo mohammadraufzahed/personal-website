@@ -1,0 +1,116 @@
+@media screen and (min-width: 993px) {
+  .header_head_top {
+    height: 8.472vh;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .header_corner_right_top {
+    display: block;
+  }
+  .header_corner_information {
+    top: 2vw;
+    right: 0.5vw;
+    height: 8vw;
+    width: auto;
+    text-align: none;
+    h3:nth-of-type(1) {
+      border-bottom: 2px solid white;
+      height: 4vw;
+      font-size: 1.8vw;
+      color: #da0037;
+      padding-left: 0px;
+      padding-top: 5px;
+    }
+    figure {
+      display: none;
+    }
+    h3:nth-of-type(2) {
+      font-size: 1.8vw;
+      padding-left: 40px;
+      span {
+        color: #ffffff;
+      }
+    }
+  }
+  .header_corner_image {
+    display: block;
+    top: -7vw;
+    right: -10vw;
+    left: auto;
+    figure {
+      img {
+        width: 19.75vw;
+        opacity: 100%;
+        height: 19.75vw;
+      }
+    }
+  }
+  .header_corner {
+    height: 100%;
+  }
+  .header_corner_leftbottom {
+    div:nth-of-type(1) {
+      bottom: -18vw;
+      left: -15vw;
+      figure {
+        img {
+          width: 33vw;
+          height: 32.723vw;
+        }
+      }
+    }
+    div:nth-of-type(2) {
+      padding-left: 1vw;
+      padding-bottom: 2.1vw;
+      h3 {
+        font-size: 2.8vw;
+        padding-left: 0.8vw;
+        padding-top: 0px;
+        span {
+          font-size: 4vw;
+        }
+      }
+      h5 {
+        font-size: 2vw;
+        padding-left: 2vw;
+      }
+    }
+  }
+  .header_main_left_piece {
+    margin-top: -25vw;
+    figure {
+      img {
+        width: 10.5vw;
+        height: 10.5vw;
+      }
+    }
+    h2 {
+      letter-spacing: 1px;
+      font-size: 3.7vw;
+      padding-left: 25px;
+      span {
+        font-size: 6vw;
+      }
+    }
+  }
+  .header_name_information {
+    margin-top: 6vw;
+    margin-left: 1vw;
+    h1 {
+      font-size: 7.4vw;
+    }
+    figure {
+      img {
+        width: 32vw;
+        height: 45vw;
+      }
+    }
+  }
+  .header_corners_page_number {
+    width: 6vw;
+    height: 9.2vw;
+    right: 1vw;
+    p {
+      font-size: 6vw;
+    }
+  }
+}
