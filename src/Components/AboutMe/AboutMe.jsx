@@ -1,8 +1,5 @@
 import React from "react";
 import AboutMeStyle from "../../Styles/AboutMe/AboutMe.module.scss";
-import MY_CV from "../../CVFille/CV.pdf";
-import Little_Circle from "../../images/Header/Red_circle.png";
-import Main_picture from "../../images/AboutMe/withoutbackground94.png";
 import { Link } from "react-router-dom";
 import { Right_Counter } from "../SocialMedia_PageNumber/Right_Counter";
 
@@ -12,13 +9,13 @@ export const AboutMe = () => {
       <div className={AboutMeStyle.information_box}>
         <div className={AboutMeStyle.first_box}>
           <figure>
-            <img src={Little_Circle} alt="" />
+            <img src="/images/Header/Red_circle.png" alt="" />
           </figure>
           <h2>
             ABO<span>U</span>T ME
           </h2>
           <figure>
-            <img src={Main_picture} alt="" />
+            <img src="/images/AboutMe/withoutbackground94.png" alt="" />
           </figure>
         </div>
         <div className={AboutMeStyle.personal_information}>
@@ -55,7 +52,7 @@ export const AboutMe = () => {
               <a>30 August 2001</a>
             </div>
             <div className={AboutMeStyle.cv_button}>
-              <Link to={MY_CV} target="_blank" download>
+              <Link to="/cv.pdf" target="_blank" download>
                 Download CV
               </Link>
             </div>
