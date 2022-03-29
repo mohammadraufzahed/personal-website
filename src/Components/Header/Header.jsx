@@ -12,37 +12,20 @@ import Circle from "../../images/Header/LeftBottom.png";
 import White from "../../images/Header/bttersun-modified.png";
 import Little_Circle from "../../images/Header/Red_circle.png";
 import Main_Picture from "../../images/Header/withoutbackground911.png";
-import Logo from "../../images/Header/MYLOGO.png";
 import { Right_Counter } from "../SocialMedia_PageNumber/Right_Counter";
 library.add(faGithub, faLinkedinIn, faInstagram, faLeftLong);
 export const Header = () => {
   return (
     <section className={HeaderStyle.header}>
-      {/* <div className={HeaderStyle.header_head_top}>
-        <div className={HeaderStyle.head_top_logo}>
-          <figure>
-            <img src={Logo} alt="" width={65} height={65} />
-          </figure>
-        </div>
+      <div className={HeaderStyle.header_head_top}>
         <div className={HeaderStyle.header_corner_right_top}>
-          <div className={HeaderStyle.header_corner_information}>
-            <h3>
-              <span>C</span>reative
-            </h3>
-            <figure>
-              <FontAwesomeIcon icon={faLeftLong} />
-            </figure>
-            <h3>
-              <span>D</span>eveloper
-            </h3>
-          </div>
           <div className={HeaderStyle.header_corner_image}>
             <figure>
               <img src={White} />
             </figure>
           </div>
         </div>
-      </div> */}
+      </div>
       <div className={HeaderStyle.header_corner}>
         <div className={HeaderStyle.header_corner_leftbottom}>
           <div>

@@ -1,13 +1,12 @@
 @media screen and (min-width: 320px) {
   .header_head_top {
-    position: fixed;
     z-index: 20;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.8);
     height: 10.472vh;
   }
   .head_top_logo {
-    top: 20%;
+    top: 18%;
     z-index: 5;
     figure {
       img {
@@ -20,10 +19,10 @@
     display: contents;
   }
   .header_corner_information {
-    top: 1%;
+    top: 4%;
     right: auto;
-    height: 57px;
-    width: 98%;
+    height: 80%;
+    width: 100%;
     text-align: center;
     h3:nth-of-type(1) {
       border-bottom: none;
@@ -37,7 +36,7 @@
       display: none;
     }
     h3:nth-of-type(2) {
-      font-size: 17px;
+      font-size: 18px;
       padding-left: 0px;
       span {
         color: #da0037;
@@ -52,18 +51,19 @@
     figure {
       img {
         opacity: 90%;
+        width: 45.125vw;
       }
     }
   }
   .header_corner {
-    height: 100%;
+    height: 90%;
   }
   .header_corner_leftbottom {
     display: flex;
     align-items: end;
     div:nth-of-type(1) {
       bottom: -15vw;
-      left: -9vw;
+      left: -8vw;
       width: auto;
       figure {
         img {
@@ -74,31 +74,32 @@
     }
     div:nth-of-type(2) {
       padding-left: 2vw;
-      padding-bottom: 2.5vw;
+      padding-bottom: 3.5vw;
       z-index: 5;
       h3 {
-        font-size: 4.6vw;
+        font-size: 4.2vw;
         padding-left: 0.4vw;
         padding-top: 0px;
         span {
-          font-size: 8vw;
+          font-size: 7vw;
         }
       }
       h5 {
         font-size: 3.4vw;
         padding-left: 3.5vw;
-        padding-top: 0.5vw;
+        padding-top: 0.7vw;
       }
     }
   }
   .header_main {
     align-items: center;
-    height: 100%;
-    flex: 0 0 100%;
-    max-width: 100%;
+    height: 90%;
+    flex: 0 0 87%;
+    max-width: 87%;
   }
   .header_main_left_piece {
-    margin-top: -28vw;
+    margin-top: -41vw;
+    height: 12%;
     figure {
       padding-top: 7px;
       img {
@@ -109,22 +110,22 @@
     h2 {
       letter-spacing: 1px;
       font-size: 5vw;
-      padding-left: 12px;
+      padding-left: 4vw;
       span {
         font-size: 8vw;
       }
     }
   }
   .header_name_information {
-    margin-top: 16vw;
-    margin-left: -5.5%;
+    margin-top: 2vw;
+    margin-left: -11%;
     h1 {
       font-size: 9vw;
-      margin-left: -19%;
+      margin-left: -9vw;
       letter-spacing: 5px;
     }
     figure {
-      margin-left: 6.5%;
+      margin-left: 10vw;
       img {
         width: 48vw;
         height: 67vw;

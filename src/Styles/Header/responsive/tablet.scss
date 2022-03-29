@@ -19,7 +19,7 @@
     height: 65px;
   }
   .header_corner {
-    height: 100%;
+    height: 89%;
   }
   .header_corner_leftbottom {
     div:nth-of-type(1) {
@@ -47,10 +47,12 @@
     }
   }
   .header_main {
-    height: 100%;
+    height: 89%;
+    flex: 0 0 89%;
+    max-width: 89%;
   }
   .header_main_left_piece {
-    margin-top: -230px;
+    margin-top: -305px;
     figure {
       img {
         width: 88px;
@@ -66,8 +68,8 @@
     }
   }
   .header_name_information {
-    margin-top: 5%;
-    margin-left: 2.5%;
+    margin-top: -5%;
+    margin-left: 0.5%;
     h1 {
       font-size: 63px;
     }
