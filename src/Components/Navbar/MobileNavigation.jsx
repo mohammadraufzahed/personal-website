@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { NavLinks } from "./NavLinks";
-import Logo from "../../images/Header/MYLOGO.png";
 import MobileNavigate from "../../Styles/Navbar/Navbar.module.scss";
 import HeaderStyle from "../../Styles/Header/Header.module.scss";
 import MenuToggle from "./MenuToggle";
@@ -12,7 +11,7 @@ export const MobileNavigation = () => {
       <div className={HeaderStyle.header_head_top}>
         <div className={HeaderStyle.head_top_logo}>
           <figure>
-            <img src={Logo} alt="" width={65} height={65} />
+            <img src="/images/Header/MYLOGO.png" alt="" width={65} height={65} />
           </figure>
         </div>
         <div className={HeaderStyle.header_corner_right_top}>
