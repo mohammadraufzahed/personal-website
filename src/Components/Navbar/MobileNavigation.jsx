@@ -1,21 +1,25 @@
 import React, { useState } from "react";
 import { NavLinks } from "./NavLinks";
 import MobileNavigate from "../../Styles/Navbar/Navbar.module.scss";
-import HeaderStyle from "../../Styles/Header/Header.module.scss";
 import MenuToggle from "./MenuToggle";
 export const MobileNavigation = () => {
   const [isOpen, setOpen] = useState(false);
   const closeMobileMenu = () => setOpen(false);
   return (
     <>
-      <div className={HeaderStyle.header_head_top}>
-        <div className={HeaderStyle.head_top_logo}>
+      <div className={MobileNavigate.header_head_top}>
+        <div className={MobileNavigate.head_top_logo}>
           <figure>
-            <img src="/images/Header/MYLOGO.png" alt="" width={65} height={65} />
+            <img
+              src="/images/Header/MYLOGO.png"
+              alt=""
+              width={65}
+              height={65}
+            />
           </figure>
         </div>
-        <div className={HeaderStyle.header_corner_right_top}>
-          <div className={HeaderStyle.header_corner_information}>
+        <div className={MobileNavigate.header_corner_right_top}>
+          <div className={MobileNavigate.header_corner_information}>
             <h3>
               <span>C</span>reative
             </h3>

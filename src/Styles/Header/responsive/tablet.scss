@@ -1,92 +1,70 @@
 @media screen and (min-width: 768px) {
-  .header_head_top {
-    height: 11.472vh;
-    figure {
-      img {
-        width: 50px;
-        height: 50px;
-      }
-    }
-  }
-  .head_top_logo {
-    top: 17%;
-  }
-  .header_corner_right_top {
-    display: contents;
-  }
-  .header_corner_information {
-    top: 2px;
-    height: 65px;
-  }
   .header_corner {
-    height: 89%;
+    height: 16vw;
   }
   .header_corner_leftbottom {
     div:nth-of-type(1) {
-      bottom: -15%;
-      left: -12%;
       figure {
         img {
-          width: 253px;
-          height: 251px;
+          width: 33vw;
+          height: 33vw;
         }
       }
     }
     div:nth-of-type(2) {
-      padding-left: 10px;
-      padding-bottom: 15px;
+      padding-bottom: 1.5vw;
       h3 {
-        font-size: 26px;
+        font-size: 2.8vw;
         span {
-          font-size: 40px;
+          font-size: 5vw;
         }
       }
       h5 {
-        font-size: 21px;
+        font-size: 2.5vw;
       }
     }
   }
   .header_main {
-    height: 89%;
+    height: 90%;
     flex: 0 0 89%;
     max-width: 89%;
   }
   .header_main_left_piece {
-    margin-top: -305px;
+    margin-top: -36vw;
     figure {
       img {
-        width: 88px;
-        height: 88px;
+        width: 11.4vw;
+        height: 11.4vw;
       }
     }
     h2 {
-      font-size: 30px;
-      padding-left: 20px;
+      font-size: 4vw;
+      padding-left: 2.8vw;
       span {
-        font-size: 53px;
+        font-size: 7.5vw;
       }
     }
   }
   .header_name_information {
-    margin-top: -5%;
-    margin-left: 0.5%;
+    margin-top: -2vw;
+    margin-left: -2vw;
     h1 {
-      font-size: 63px;
+      font-size: 8.3vw;
     }
     figure {
-      margin-left: 5.5%;
+      margin-left: 7.5vw;
       img {
-        width: 305px;
-        height: 450px;
+        width: 38.413vw;
+        height: 57vw;
       }
     }
   }
   .header_corners_page_number {
-    width: 11vw;
-    height: 12.6vw;
+    width: 10vw;
+    height: 11.5vw;
     bottom: 0.7vw;
     p {
-      font-size: 11vw;
+      font-size: 10vw;
     }
   }
 }

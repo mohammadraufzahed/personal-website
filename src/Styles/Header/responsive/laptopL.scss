@@ -1,36 +1,25 @@
 @media screen and (min-width: 1201px) {
-  .header_corner_information {
-    height: 7vw;
-    h3:nth-of-type(1) {
-      height: 3.5vw;
-    }
-    figure {
-      display: none;
-    }
-    h3:nth-of-type(2) {
-      padding-left: 60px;
-    }
-  }
   .header_corner_image {
     top: -8vw;
     right: -8.9vw;
   }
   .header_corner {
-    height: 100%;
+    height: 14vw;
   }
   .header_corner_leftbottom {
     div:nth-of-type(1) {
-      left: -19vw;
+      left: -16vw;
+      bottom: -21vw;
     }
     div:nth-of-type(2) {
       h3 {
-        font-size: 2vw;
+        font-size: 2.2vw;
         span {
-          font-size: 3.2vw;
+          font-size: 4vw;
         }
       }
       h5 {
-        font-size: 1.6vw;
+        font-size: 2vw;
       }
     }
   }
@@ -63,6 +52,6 @@
     }
   }
   .header_corners_page_number {
-    height: 6.8vw;
+    height: 7.8vw;
   }
 }

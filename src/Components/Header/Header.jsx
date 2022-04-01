@@ -24,7 +24,12 @@ export const Header = () => {
         <div className={HeaderStyle.header_corner_leftbottom}>
           <div>
             <figure>
-              <img src="/images/Header/LeftBottom.png" width={500} height={500} alt="" />
+              <img
+                src="/images/Header/LeftBottom.png"
+                width={500}
+                height={500}
+                alt=""
+              />
             </figure>
           </div>
           <div>
