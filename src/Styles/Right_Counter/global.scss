@@ -17,6 +17,7 @@
     border-radius: 50%;
     border: 2px solid #da0037;
     cursor: pointer;
+    animation: pulse 1s infinite;
     a {
       display: flex;
       justify-content: center;
@@ -25,6 +26,14 @@
       width: 100%;
       height: 100%;
     }
+  }
+}
+@keyframes pulse {
+  0% {
+    box-shadow: #da0037 0 0 0 0;
+  }
+  80% {
+    box-shadow: #000000 0 0 0 0.65vw;
   }
 }
 .header_corners_page_number {

@@ -41,7 +41,9 @@ export const AboutMe = () => {
             </div>
             <div>
               <h5>Email</h5>
-              <a>mohammad.bagheri 24680@gmail.com</a>
+              <a href="mailto:mohammad.bagheri24680@gmail.com">
+                mohammad.bagheri 24680@gmail.com
+              </a>
             </div>
             <div>
               <h5>Freelance</h5>
@@ -58,7 +60,7 @@ export const AboutMe = () => {
             </div>
             <div>
               <h5>Phone Number</h5>
-              <a>+98 933 282 8110</a>
+              <a href="tel:09332828110">+98 933 282 8110</a>
             </div>
           </div>
         </div>

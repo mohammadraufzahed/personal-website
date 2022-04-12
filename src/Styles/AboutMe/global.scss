@@ -122,6 +122,7 @@
   padding-top: 45px;
   a {
     background: #da0037;
+    animation: pulse 2s infinite;
     width: 10.5vw;
     height: 2.8vw;
     display: flex;
@@ -129,6 +130,14 @@
     align-items: center;
     justify-content: center;
     border-radius: 30px;
+  }
+}
+@keyframes pulse {
+  0% {
+    box-shadow: #da0037 0 0 0 0;
+  }
+  80% {
+    box-shadow: #000000 0 0 0 0.7vw;
   }
 }
 .header_corners_page_number {

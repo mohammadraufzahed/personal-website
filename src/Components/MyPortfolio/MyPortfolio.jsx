@@ -19,58 +19,57 @@ export const MyPortfolio = () => {
         </div>
         <div className={Portfolio.Items}>
           <div>
-            <p></p>
-            <p></p>
-            <figure>
-              <img src="/images/MyPortfolio/Capture.png" alt="">
-                {/* <Link to="https://kilid-mohammad24680.vercel.app/"></Link> */}
-              </img>
-            </figure>
+            <p>Personal Panel</p>
+            <p>01</p>
+            <a href="https://personal-panel.vercel.app/" target="_blank">
+              <figure>
+                <img
+                  src="/images/MyPortfolio/6d9fedbf-c877-497b-9910-321fa29fea4bb.png"
+                  alt=""
+                ></img>
+              </figure>
+            </a>
           </div>
           <div>
-            <p></p>
-            <p></p>
-            <figure>
-              <img src="/images/MyPortfolio/Capture.png" alt="">
-                {/* <Link to="https://kilid-mohammad24680.vercel.app/"></Link> */}
-              </img>
-            </figure>
+            <p>Outdoor Dynamics</p>
+            <p>02</p>
+            <a
+              href="https://outdoor-dynamics-slider.vercel.app/"
+              target="_blank"
+            >
+              <figure>
+                <img
+                  src="/images/MyPortfolio/df611b3d-38da-44bb-83fb-eea2b351863ff.png"
+                  alt=""
+                ></img>
+              </figure>
+            </a>
           </div>
           <div>
-            <p></p>
-            <p></p>
-            <figure>
-              <img src="/images/MyPortfolio/Capture.png" alt="">
-                {/* <Link to="https://kilid-mohammad24680.vercel.app/"></Link> */}
-              </img>
-            </figure>
+            <p>Khabar Online</p>
+            <p>03</p>
+            <a href="https://khabar-online.vercel.app/" target="_blank">
+              <figure>
+                <img
+                  src="/images/MyPortfolio/8970d2a6-3e46-4778-a421-057c73dfdd461.png"
+                  alt=""
+                ></img>
+              </figure>
+            </a>
           </div>
           <div>
-            <p></p>
-            <p></p>
-            <figure>
-              <img src="/images/MyPortfolio/Capture.png" alt="">
-                {/* <Link to="https://kilid-mohammad24680.vercel.app/"></Link> */}
-              </img>
-            </figure>
+            <p>Kilid</p>
+            <p>04</p>
+            <a href="https://kilid-mohammad24680.vercel.app/" target="_blank">
+              <figure>
+                <img src="/images/MyPortfolio/cover-22 (1).jpg" alt=""></img>
+              </figure>
+            </a>
           </div>
+        </div>
+        <div className={Portfolio.see_more}>
           <div>
-            <p></p>
-            <p></p>
-            <figure>
-              <img src="/images/MyPortfolio/Capture.png" alt="">
-                {/* <Link to="https://kilid-mohammad24680.vercel.app/"></Link> */}
-              </img>
-            </figure>
-          </div>
-          <div>
-            <p></p>
-            <p></p>
-            <figure>
-              <img src="/images/MyPortfolio/Capture.png" alt="">
-                {/* <Link to="https://kilid-mohammad24680.vercel.app/"></Link> */}
-              </img>
-            </figure>
+            <Link to="/seemore">See More</Link>
           </div>
         </div>
       </div>
