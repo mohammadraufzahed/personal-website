@@ -1,0 +1,19 @@
+@media screen and (min-width: 1440px) {
+  .Items {
+    flex: 0 0 80%;
+    max-width: 80%;
+    div {
+      width: 41.3%;
+      a {
+        flex: 0 0 100%;
+        figure {
+          img {
+            width: 33.056vw;
+            height: 21.806vw;
+            border-radius: 0.5vw;
+          }
+        }
+      }
+    }
+  }
+}
