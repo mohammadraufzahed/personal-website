@@ -28,9 +28,10 @@ export const MyServices = () => {
             <figure>
               <img src="/images/MyServices/withoubackground126.png" alt="" />
             </figure>
-            <h5>Web Development</h5>
+            <h5>Web design</h5>
             <p>
-              i can help you to make and develop the site you are considering
+              i can design a site that has a beautiful space that attracts your
+              users
             </p>
           </div>
           <div>
@@ -40,9 +41,10 @@ export const MyServices = () => {
             <figure>
               <img src="/images/MyServices/withoubackground127.png" alt="" />
             </figure>
-            <h5>Web Development</h5>
+            <h5>Web Application</h5>
             <p>
-              i can help you to make and develop the site you are considering
+              i can help you to have your own web aplication for better
+              communication with your users and convenience of your users
             </p>
           </div>
         </div>
