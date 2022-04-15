@@ -1,6 +1,7 @@
 import React from "react";
 import "../../Styles/global/global.scss";
 import { AboutMe } from "../AboutMe/AboutMe.jsx";
+import { Contact_Me } from "../Contact_Me/Contact_Me";
 import { Header } from "../Header/Header";
 import { MyPortfolio } from "../MyPortfolio/MyPortfolio";
 import { MyServices } from "../MyServices/MyServices";
@@ -13,6 +14,7 @@ export const Main = () => {
       <MySkills />
       <MyServices />
       <MyPortfolio />
+      <Contact_Me />
     </main>
   );
 };
