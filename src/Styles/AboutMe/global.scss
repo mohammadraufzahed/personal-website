@@ -130,6 +130,10 @@
     align-items: center;
     justify-content: center;
     border-radius: 30px;
+    transition: 0.3s;
+  }
+  a:hover {
+    transform: scale(1.1);
   }
 }
 @keyframes pulse {
@@ -164,13 +168,13 @@
     width: 23vw;
     height: 0.26vw;
     top: 12%;
-    background-color: #ffffff;
+    background: linear-gradient(60deg, #700235, #da0037, #7a0000) 0 50%;
   }
   span:nth-of-type(2) {
     left: 6%;
     height: 33vw;
     width: 0.26vw;
     bottom: 5%;
-    background-color: #ffffff;
+    background: linear-gradient(60deg, #700235, #da0037, #7a0000) 0 50%;
   }
 }

@@ -1,0 +1,24 @@
+@media screen and (min-width: 993px) {
+  .form {
+    figure {
+      top: -28vw;
+      left: 6vw;
+      img {
+        width: 26.4862vw;
+        height: 35.5vw;
+      }
+    }
+  }
+  .corners_page_number {
+    height: 8vw;
+    width: 8vw;
+    p {
+      font-size: 6.8vw;
+    }
+  }
+  .side_images {
+    > figure:nth-of-type(2) {
+      bottom: 0vw;
+    }
+  }
+}
