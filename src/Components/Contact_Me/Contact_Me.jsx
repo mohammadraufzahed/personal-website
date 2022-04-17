@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import emailjs from "emailjs-com";
 import ContactMe from "../../Styles/Contact_Me/ContactMe.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -10,6 +12,7 @@ import {
   faLinkedinIn,
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
+toast.configure();
 export const Contact_Me = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -35,8 +38,15 @@ export const Contact_Me = () => {
       setEmail("");
       setMessage("");
       setEmailSent(true);
+      toast.success("succes", {
+        position: toast.POSITION.TOP_CENTER,
+        autoClose: 3000,
+      });
     } else {
-      alert("Please fill in all fields.");
+      toast.error("Please fill in all fields", {
+        position: toast.POSITION.TOP_CENTER,
+        autoClose: 3000,
+      });
     }
   };
   const isValidEmail = () => {
@@ -44,6 +54,7 @@ export const Contact_Me = () => {
       /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/gm;
     setValidEmail(regex.test(email));
   };
+
   return (
     <section className={ContactMe.ContactMe_items}>
       <div className={ContactMe.information_box}>
@@ -56,6 +67,9 @@ export const Contact_Me = () => {
       </div>
       <div className={ContactMe.ContactMe_items_information}>
         <div className={ContactMe.form}>
+          <figure>
+            <img src="/images/Contact_Me/withoutbackground922.png" alt="" />
+          </figure>
           <h4>Get in touch</h4>
           <div>
             <input
@@ -85,13 +99,13 @@ export const Contact_Me = () => {
             ></textarea>
           </div>
           <div className={ContactMe.Click_Me}>
-            <button onClick={submit}>Send Message</button>
-            {emailSent
-              ? "Thank you for your message, i will be in touch in no time!"
-              : null}
+            <button onClick={submit}>Send</button>
           </div>
         </div>
         <div className={ContactMe.social_media}>
+          <figure>
+            <img src="/images/Contact_Me/withoubackground141.png" alt="" />
+          </figure>
           <div className={ContactMe.main_header}>
             <h4>Nice to meet you, i will chat you soon.</h4>
           </div>
@@ -131,6 +145,17 @@ export const Contact_Me = () => {
             </motion.div>
           </div>
         </div>
+      </div>
+      <div className={ContactMe.side_images}>
+        <figure>
+          <img src="/images/Contact_Me/withoutbackground77.png" alt="" />
+        </figure>
+        <figure>
+          <img src="/images/Header/Red_circle.png" alt="" />
+        </figure>
+      </div>
+      <div className={ContactMe.corners_page_number}>
+        <p>05</p>
       </div>
     </section>
   );
