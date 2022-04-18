@@ -32,6 +32,20 @@
       }
     }
   }
+  .side_images {
+    > figure:nth-of-type(1) {
+      top: 11vw;
+      img {
+        width: 53vw;
+      }
+    }
+    > figure:nth-of-type(2) {
+      bottom: 28vw;
+      img {
+        width: 53vw;
+      }
+    }
+  }
   .corners_page_number {
     height: 7.8vw;
   }

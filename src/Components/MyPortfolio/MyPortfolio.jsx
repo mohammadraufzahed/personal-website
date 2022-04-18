@@ -76,6 +76,14 @@ export const MyPortfolio = () => {
       <div className={Portfolio.social_media}>
         <Right_Counter />
       </div>
+      <div className={Portfolio.side_images}>
+        <figure>
+          <img src="/images/MyPortfolio/withoutbackground30.png" alt="" />
+        </figure>
+        <figure>
+          <img src="/images/MyPortfolio/withoutbackground30.png" alt="" />
+        </figure>
+      </div>
       <div className={Portfolio.corners_page_number}>
         <p>04</p>
       </div>
