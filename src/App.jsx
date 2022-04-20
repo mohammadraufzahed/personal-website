@@ -1,7 +1,7 @@
 import React from "react";
+import App_Css from "./Styles/global/App-css.module.scss";
 import { Route, Routes } from "react-router-dom";
-import { RingLoader } from "react-spinners";
-import Navbar from "./Components/Navbar/Navbar";
+const LazyNavbar = React.lazy(() => import("./Components/Navbar/Navbar"));
 const LazyAboutMe = React.lazy(() => import("./Components/AboutMe/AboutMe"));
 const LazyContact_Me = React.lazy(() =>
   import("./Components/Contact_Me/Contact_Me")
@@ -17,70 +17,25 @@ const LazyPortfolio_SeeMore = React.lazy(() =>
 function App() {
   return (
     <>
-      <Navbar />
-      <Routes>
-        <Route
-          index
-          exact
-          element={
-            <React.Suspense
-              fallback={<RingLoader size={30} color={"#da0037"} loading />}
-            >
-              <LazyMain />
-            </React.Suspense>
-          }
-        />
-        <Route
-          path="/about"
-          element={
-            <React.Suspense
-              fallback={<RingLoader size={30} color={"#da0037"} loading />}
-            >
-              <LazyAboutMe />
-            </React.Suspense>
-          }
-        />
-        <Route
-          path="/skills"
-          element={
-            <React.Suspense
-              fallback={<RingLoader size={30} color={"#da0037"} loading />}
-            >
-              <LazyMySkills />
-            </React.Suspense>
-          }
-        />
-        <Route
-          path="/portfolio"
-          element={
-            <React.Suspense
-              fallback={<RingLoader size={30} color={"#da0037"} loading />}
-            >
-              <LazyMyPortfolio />
-            </React.Suspense>
-          }
-        />
-        <Route
-          path="/contact"
-          element={
-            <React.Suspense
-              fallback={<RingLoader size={30} color={"#da0037"} loading />}
-            >
-              <LazyContact_Me />
-            </React.Suspense>
-          }
-        />
-        <Route
-          path="/seemore"
-          element={
-            <React.Suspense
-              fallback={<RingLoader size={30} color={"#da0037"} loading />}
-            >
-              <LazyPortfolio_SeeMore />
-            </React.Suspense>
-          }
-        />
-      </Routes>
+      <React.Suspense
+        fallback={
+          <div className={App_Css.loader}>
+            <figure>
+              <img src="/images/1_CsJ05WEGfunYMLGfsT2sXA.gif" alt="" />
+            </figure>
+          </div>
+        }
+      >
+        <LazyNavbar />
+        <Routes>
+          <Route index exact element={<LazyMain />} />
+          <Route path="/about" element={<LazyAboutMe />} />
+          <Route path="/skills" element={<LazyMySkills />} />
+          <Route path="/portfolio" element={<LazyMyPortfolio />} />
+          <Route path="/contact" element={<LazyContact_Me />} />
+          <Route path="/seemore" element={<LazyPortfolio_SeeMore />} />
+        </Routes>
+      </React.Suspense>
     </>
   );
 }
