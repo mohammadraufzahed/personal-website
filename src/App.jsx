@@ -21,7 +21,7 @@ function App() {
         fallback={
           <div className={App_Css.loader}>
             <figure>
-              <img src="/images/1_CsJ05WEGfunYMLGfsT2sXA.gif" alt="" />
+              <img src="/images/bubble-loader.gif" alt="" />
             </figure>
           </div>
         }
