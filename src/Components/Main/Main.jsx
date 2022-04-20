@@ -6,6 +6,7 @@ import Header from "../Header/Header";
 import MyPortfolio from "../MyPortfolio/MyPortfolio";
 import MyServices from "../MyServices/MyServices";
 import MySkills from "../MySkills/MySkills";
+import ScrollUpButton from "../ScrrollUpButton/ScrollUpButton";
 const Main = () => {
   return (
     <main>
@@ -15,6 +16,7 @@ const Main = () => {
       <MyServices />
       <MyPortfolio />
       <Contact_Me />
+      <ScrollUpButton />
     </main>
   );
 };

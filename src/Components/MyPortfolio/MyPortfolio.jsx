@@ -6,6 +6,9 @@ import { Right_Counter } from "../SocialMedia_PageNumber/Right_Counter";
 const animationFrom = { opacity: 0, x: 100 };
 const animateTo = { opacity: 1, x: 0 };
 const exit = { opacity: 0, x: 100 };
+const animationFrom2 = { opacity: 0 };
+const animateTo2 = { opacity: 1 };
+const exit2 = { opacity: 0 };
 const MyPortfolio = () => {
   return (
     <section className={Portfolio.MyPortfolio_items}>
@@ -108,10 +111,10 @@ const MyPortfolio = () => {
         <Right_Counter />
       </div>
       <motion.div
-        initial={animationFrom}
-        animate={animateTo}
-        exit={exit}
-        transition={{ duration: 0.5 }}
+        initial={animationFrom2}
+        animate={animateTo2}
+        exit={exit2}
+        transition={{ duration: 1.5 }}
         className={Portfolio.side_images}
       >
         <figure>
