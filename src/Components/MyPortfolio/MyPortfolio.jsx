@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Portfolio from "../../Styles/Portfilio/Portfolio.module.scss";
 import { Right_Counter } from "../SocialMedia_PageNumber/Right_Counter";
-export const MyPortfolio = () => {
+const MyPortfolio = () => {
   return (
     <section className={Portfolio.MyPortfolio_items}>
       <div className={Portfolio.MyPortfolio_items_information}>
@@ -90,3 +90,5 @@ export const MyPortfolio = () => {
     </section>
   );
 };
+
+export default MyPortfolio;

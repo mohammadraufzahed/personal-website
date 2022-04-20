@@ -1,8 +1,7 @@
 import React from "react";
 import Skills from "../../Styles/MySkills/MySkills.module.scss";
 import { Right_Counter } from "../SocialMedia_PageNumber/Right_Counter";
-
-export const MySkills = () => {
+const MySkills = () => {
   return (
     <section className={Skills.Myskills_items}>
       <div className={Skills.Myskills_items_information}>
@@ -135,3 +134,5 @@ export const MySkills = () => {
     </section>
   );
 };
+
+export default MySkills;

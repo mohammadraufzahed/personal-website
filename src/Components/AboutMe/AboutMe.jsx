@@ -3,7 +3,7 @@ import AboutMeStyle from "../../Styles/AboutMe/AboutMe.module.scss";
 import { Link } from "react-router-dom";
 import { Right_Counter } from "../SocialMedia_PageNumber/Right_Counter";
 
-export const AboutMe = () => {
+const AboutMe = () => {
   return (
     <section className={AboutMeStyle.information_container}>
       <div className={AboutMeStyle.information_box}>
@@ -78,3 +78,5 @@ export const AboutMe = () => {
     </section>
   );
 };
+
+export default AboutMe;

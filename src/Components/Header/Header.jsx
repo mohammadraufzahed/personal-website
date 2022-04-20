@@ -8,7 +8,7 @@ import {
 import HeaderStyle from "../../Styles/Header/Header.module.scss";
 import { Right_Counter } from "../SocialMedia_PageNumber/Right_Counter";
 library.add(faGithub, faLinkedinIn, faInstagram, faLeftLong);
-export const Header = () => {
+const Header = () => {
   return (
     <section className={HeaderStyle.header}>
       <div className={HeaderStyle.header_head_top}>
@@ -69,3 +69,5 @@ export const Header = () => {
     </section>
   );
 };
+
+export default Header;

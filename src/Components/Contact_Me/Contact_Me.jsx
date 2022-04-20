@@ -13,7 +13,7 @@ import {
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 toast.configure();
-export const Contact_Me = () => {
+const Contact_Me = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [validEmail, setValidEmail] = useState(false);
@@ -160,3 +160,5 @@ export const Contact_Me = () => {
     </section>
   );
 };
+
+export default Contact_Me;
