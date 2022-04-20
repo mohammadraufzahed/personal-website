@@ -1,24 +1,48 @@
 import React from "react";
+import { motion } from "framer-motion";
 import AboutMeStyle from "../../Styles/AboutMe/AboutMe.module.scss";
 import { Link } from "react-router-dom";
 import { Right_Counter } from "../SocialMedia_PageNumber/Right_Counter";
-
+const animationFrom = { opacity: 0, x: 100 };
+const animateTo = { opacity: 1, x: 0 };
+const exit = { opacity: 0, x: 100 };
 const AboutMe = () => {
   return (
     <section className={AboutMeStyle.information_container}>
       <div className={AboutMeStyle.information_box}>
         <div className={AboutMeStyle.first_box}>
-          <figure>
+          <motion.figure
+            initial={animationFrom}
+            animate={animateTo}
+            exit={exit}
+            transition={{ duration: 0.5 }}
+          >
             <img src="/images/Header/Red_circle.png" alt="" />
-          </figure>
-          <h2>
+          </motion.figure>
+          <motion.h2
+            initial={animationFrom}
+            animate={animateTo}
+            exit={exit}
+            transition={{ duration: 0.5 }}
+          >
             ABO<span>U</span>T ME
-          </h2>
-          <figure>
+          </motion.h2>
+          <motion.figure
+            initial={animationFrom}
+            animate={animateTo}
+            exit={exit}
+            transition={{ duration: 0.5 }}
+          >
             <img src="/images/AboutMe/withoutbackground94.png" alt="" />
-          </figure>
+          </motion.figure>
         </div>
-        <div className={AboutMeStyle.personal_information}>
+        <motion.div
+          initial={animationFrom}
+          animate={animateTo}
+          exit={exit}
+          transition={{ duration: 0.5 }}
+          className={AboutMeStyle.personal_information}
+        >
           <p>
             Hello There My name is <span>MOHAMMAD BAGHERI ,</span> Im a{" "}
             <span>F</span>rontend <span>D</span>eveloper from Iran and Studying
@@ -27,13 +51,25 @@ const AboutMe = () => {
             enjoy turning Complex Problems into the Simple, Beautiful and
             Intuitive Interface Designs.
           </p>
-        </div>
-        <div className={AboutMeStyle.second_box}>
+        </motion.div>
+        <motion.div
+          initial={animationFrom}
+          animate={animateTo}
+          exit={exit}
+          transition={{ duration: 0.5 }}
+          className={AboutMeStyle.second_box}
+        >
           <h3>
             <span>P</span>ersonal <span>D</span>etails
           </h3>
-        </div>
-        <div className={AboutMeStyle.personal_details}>
+        </motion.div>
+        <motion.div
+          initial={animationFrom}
+          animate={animateTo}
+          exit={exit}
+          transition={{ duration: 0.5 }}
+          className={AboutMeStyle.personal_details}
+        >
           <div className={AboutMeStyle.personal_details_box}>
             <div>
               <h5>Full Name</h5>
@@ -63,7 +99,7 @@ const AboutMe = () => {
               <a href="tel:09332828110">+98 933 282 8110</a>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
       <div className={AboutMeStyle.social_media}>
         <Right_Counter />

@@ -1,23 +1,48 @@
 import React from "react";
+import { motion } from "framer-motion";
 import Skills from "../../Styles/MySkills/MySkills.module.scss";
 import { Right_Counter } from "../SocialMedia_PageNumber/Right_Counter";
+const animationFrom = { opacity: 0, x: 100 };
+const animateTo = { opacity: 1, x: 0 };
+const exit = { opacity: 0, x: 100 };
 const MySkills = () => {
   return (
     <section className={Skills.Myskills_items}>
       <div className={Skills.Myskills_items_information}>
         <div className={Skills.information_box}>
-          <figure>
+          <motion.figure
+            initial={animationFrom}
+            animate={animateTo}
+            exit={exit}
+            transition={{ duration: 0.5 }}
+          >
             <img src="/images/Header/Red_circle.png" alt="" />
-          </figure>
-          <h2>
+          </motion.figure>
+          <motion.h2
+            initial={animationFrom}
+            animate={animateTo}
+            exit={exit}
+            transition={{ duration: 0.5 }}
+          >
             MY S <span>K</span>ILLS
-          </h2>
-          <figure>
+          </motion.h2>
+          <motion.figure
+            initial={animationFrom}
+            animate={animateTo}
+            exit={exit}
+            transition={{ duration: 0.5 }}
+          >
             <img src="/images/MySkills/withoutbackground933.png" alt="" />
-          </figure>
+          </motion.figure>
         </div>
         <div className={Skills.Items}>
-          <div className={Skills.Items_box}>
+          <motion.div
+            initial={animationFrom}
+            animate={animateTo}
+            exit={exit}
+            transition={{ duration: 0.5 }}
+            className={Skills.Items_box}
+          >
             <h3>
               <span>T</span>echnical <span>S</span>kills
             </h3>
@@ -63,8 +88,14 @@ const MySkills = () => {
                 <div></div>
               </div>
             </div>
-          </div>
-          <div className={Skills.Items_box}>
+          </motion.div>
+          <motion.div
+            initial={animationFrom}
+            animate={animateTo}
+            exit={exit}
+            transition={{ duration: 0.5 }}
+            className={Skills.Items_box}
+          >
             <h3>
               <span>P</span>rofessional <span>S</span>kills
             </h3>
@@ -110,8 +141,14 @@ const MySkills = () => {
                 <div></div>
               </div>
             </div>
-          </div>
-          <div className={Skills.other_skills}>
+          </motion.div>
+          <motion.div
+            initial={animationFrom}
+            animate={animateTo}
+            exit={exit}
+            transition={{ duration: 0.5 }}
+            className={Skills.other_skills}
+          >
             <h4>
               <span>O</span>ther <span>S</span>kills
             </h4>
@@ -122,7 +159,7 @@ const MySkills = () => {
             <p>Sass</p>
             <p>GitHub</p>
             <p>ReactNative</p>
-          </div>
+          </motion.div>
         </div>
       </div>
       <div className={Skills.social_media}>

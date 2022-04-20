@@ -7,6 +7,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { motion } from "framer-motion";
 library.add(faGithub, faLinkedinIn, faInstagram);
+const animationFrom = { opacity: 0, x: 100 };
+const animateTo = { opacity: 1, x: 0 };
+const exit = { opacity: 0, x: 100 };
+const animationFrom2 = { opacity: 0 };
+const animateTo2 = { opacity: 1 };
+const exit2 = { opacity: 0 };
 import {
   faGithub,
   faLinkedinIn,
@@ -58,18 +64,39 @@ const Contact_Me = () => {
   return (
     <section className={ContactMe.ContactMe_items}>
       <div className={ContactMe.information_box}>
-        <figure>
+        <motion.figure
+          initial={animationFrom}
+          animate={animateTo}
+          exit={exit}
+          transition={{ duration: 0.5 }}
+        >
           <img src="/images/Header/Red_circle.png" alt="" />
-        </figure>
-        <h2>
+        </motion.figure>
+        <motion.h2
+          initial={animationFrom}
+          animate={animateTo}
+          exit={exit}
+          transition={{ duration: 0.5 }}
+        >
           CONT <span>A</span>CT ME
-        </h2>
+        </motion.h2>
       </div>
       <div className={ContactMe.ContactMe_items_information}>
-        <div className={ContactMe.form}>
-          <figure>
+        <motion.div
+          initial={animationFrom2}
+          animate={animateTo2}
+          exit={exit2}
+          transition={{ duration: 1 }}
+          className={ContactMe.form}
+        >
+          <motion.figure
+            initial={animationFrom}
+            animate={animateTo}
+            exit={exit}
+            transition={{ duration: 0.5 }}
+          >
             <img src="/images/Contact_Me/withoutbackground922.png" alt="" />
-          </figure>
+          </motion.figure>
           <h4>Get in touch</h4>
           <div>
             <input
@@ -101,11 +128,22 @@ const Contact_Me = () => {
           <div className={ContactMe.Click_Me}>
             <button onClick={submit}>Send</button>
           </div>
-        </div>
-        <div className={ContactMe.social_media}>
-          <figure>
+        </motion.div>
+        <motion.div
+          initial={animationFrom2}
+          animate={animateTo2}
+          exit={exit2}
+          transition={{ duration: 1 }}
+          className={ContactMe.social_media}
+        >
+          <motion.figure
+            initial={animationFrom}
+            animate={animateTo}
+            exit={exit}
+            transition={{ duration: 0.5 }}
+          >
             <img src="/images/Contact_Me/withoubackground141.png" alt="" />
-          </figure>
+          </motion.figure>
           <div className={ContactMe.main_header}>
             <h4>Nice to meet you, i will chat you soon.</h4>
           </div>
@@ -129,31 +167,43 @@ const Contact_Me = () => {
           </div>
           <div className={ContactMe.header_corner_right_midlle}>
             <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 1 }}>
-              <a>
+              <a href="https://github.com/mohammad24680" target="_blank">
                 <FontAwesomeIcon icon={faGithub} />
               </a>
             </motion.div>
             <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 1 }}>
-              <a>
+              <a
+                href="https://www.linkedin.com/in/mohammad-bagheri-009542211"
+                target="_blank"
+              >
                 <FontAwesomeIcon icon={faLinkedinIn} />
               </a>
             </motion.div>
             <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 1 }}>
-              <a>
+              <a
+                href="https://www.instagram.com/mohammadbagheri_mbi/"
+                target="_blank"
+              >
                 <FontAwesomeIcon icon={faInstagram} />
               </a>
             </motion.div>
           </div>
-        </div>
+        </motion.div>
       </div>
-      <div className={ContactMe.side_images}>
+      <motion.div
+        initial={animationFrom}
+        animate={animateTo}
+        exit={exit}
+        transition={{ duration: 0.5 }}
+        className={ContactMe.side_images}
+      >
         <figure>
           <img src="/images/Contact_Me/withoutbackground77.png" alt="" />
         </figure>
         <figure>
           <img src="/images/Header/Red_circle.png" alt="" />
         </figure>
-      </div>
+      </motion.div>
       <div className={ContactMe.corners_page_number}>
         <p>05</p>
       </div>

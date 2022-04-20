@@ -1,6 +1,8 @@
 import React from "react";
+import { AnimatePresence } from "framer-motion";
+import "./Styles/global/global.scss";
 import App_Css from "./Styles/global/App-css.module.scss";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 const LazyNavbar = React.lazy(() => import("./Components/Navbar/Navbar"));
 const LazyAboutMe = React.lazy(() => import("./Components/AboutMe/AboutMe"));
 const LazyContact_Me = React.lazy(() =>
@@ -14,7 +16,9 @@ const LazyMySkills = React.lazy(() => import("./Components/MySkills/MySkills"));
 const LazyPortfolio_SeeMore = React.lazy(() =>
   import("./Components/Portfolio_SeeMore/Portfolio_SeeMore")
 );
+const LazyNoMatch = React.lazy(() => import("./Components/NoMatch/NoMatch"));
 function App() {
+  const location = useLocation();
   return (
     <>
       <React.Suspense
@@ -27,14 +31,17 @@ function App() {
         }
       >
         <LazyNavbar />
-        <Routes>
-          <Route index exact element={<LazyMain />} />
-          <Route path="/about" element={<LazyAboutMe />} />
-          <Route path="/skills" element={<LazyMySkills />} />
-          <Route path="/portfolio" element={<LazyMyPortfolio />} />
-          <Route path="/contact" element={<LazyContact_Me />} />
-          <Route path="/seemore" element={<LazyPortfolio_SeeMore />} />
-        </Routes>
+        <AnimatePresence exitBeforeEnter>
+          <Routes key={location.pathname} location={location}>
+            <Route index exact element={<LazyMain />} />
+            <Route path="/about" element={<LazyAboutMe />} />
+            <Route path="/skills" element={<LazyMySkills />} />
+            <Route path="/portfolio" element={<LazyMyPortfolio />} />
+            <Route path="/contact" element={<LazyContact_Me />} />
+            <Route path="/seemore" element={<LazyPortfolio_SeeMore />} />
+            <Route path="*" element={<LazyNoMatch />} />
+          </Routes>
+        </AnimatePresence>
       </React.Suspense>
     </>
   );

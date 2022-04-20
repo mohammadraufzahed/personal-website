@@ -1,23 +1,48 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import Portfolio from "../../Styles/Portfilio/Portfolio.module.scss";
 import { Right_Counter } from "../SocialMedia_PageNumber/Right_Counter";
+const animationFrom = { opacity: 0, x: 100 };
+const animateTo = { opacity: 1, x: 0 };
+const exit = { opacity: 0, x: 100 };
 const MyPortfolio = () => {
   return (
     <section className={Portfolio.MyPortfolio_items}>
       <div className={Portfolio.MyPortfolio_items_information}>
         <div className={Portfolio.information_box}>
-          <figure>
+          <motion.figure
+            initial={animationFrom}
+            animate={animateTo}
+            exit={exit}
+            transition={{ duration: 0.5 }}
+          >
             <img src="/images/Header/Red_circle.png" alt="" />
-          </figure>
-          <h2>
+          </motion.figure>
+          <motion.h2
+            initial={animationFrom}
+            animate={animateTo}
+            exit={exit}
+            transition={{ duration: 0.5 }}
+          >
             MY PO <span>R</span>TFOLIO
-          </h2>
-          <figure>
+          </motion.h2>
+          <motion.figure
+            initial={animationFrom}
+            animate={animateTo}
+            exit={exit}
+            transition={{ duration: 0.5 }}
+          >
             <img src="/images/MyPortfolio/withoubackground9000.png" alt="" />
-          </figure>
+          </motion.figure>
         </div>
-        <div className={Portfolio.Items}>
+        <motion.div
+          initial={animationFrom}
+          animate={animateTo}
+          exit={exit}
+          transition={{ duration: 0.5 }}
+          className={Portfolio.Items}
+        >
           <div>
             <p>Personal Panel</p>
             <p>01</p>
@@ -66,24 +91,36 @@ const MyPortfolio = () => {
               </figure>
             </a>
           </div>
-        </div>
-        <div className={Portfolio.see_more}>
+        </motion.div>
+        <motion.div
+          initial={animationFrom}
+          animate={animateTo}
+          exit={exit}
+          transition={{ duration: 0.5 }}
+          className={Portfolio.see_more}
+        >
           <div>
             <Link to="/seemore">See More</Link>
           </div>
-        </div>
+        </motion.div>
       </div>
       <div className={Portfolio.social_media}>
         <Right_Counter />
       </div>
-      <div className={Portfolio.side_images}>
+      <motion.div
+        initial={animationFrom}
+        animate={animateTo}
+        exit={exit}
+        transition={{ duration: 0.5 }}
+        className={Portfolio.side_images}
+      >
         <figure>
           <img src="/images/MyPortfolio/withoutbackground30.png" alt="" />
         </figure>
         <figure>
           <img src="/images/MyPortfolio/withoutbackground30.png" alt="" />
         </figure>
-      </div>
+      </motion.div>
       <div className={Portfolio.corners_page_number}>
         <p>04</p>
       </div>

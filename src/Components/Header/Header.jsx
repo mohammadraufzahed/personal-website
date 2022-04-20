@@ -1,26 +1,43 @@
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faLeftLong } from "@fortawesome/free-solid-svg-icons";
+import { motion } from "framer-motion";
 import {
   faGithub,
   faLinkedinIn,
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
+
 import HeaderStyle from "../../Styles/Header/Header.module.scss";
 import { Right_Counter } from "../SocialMedia_PageNumber/Right_Counter";
 library.add(faGithub, faLinkedinIn, faInstagram, faLeftLong);
+const animationFrom = { opacity: 0, x: 100 };
+const animateTo = { opacity: 1, x: 0 };
+const exit = { opacity: 0, x: 100 };
 const Header = () => {
   return (
     <section className={HeaderStyle.header}>
       <div className={HeaderStyle.header_head_top}>
         <div className={HeaderStyle.header_corner_right_top}>
-          <div className={HeaderStyle.header_corner_image}>
+          <motion.div
+            initial={animationFrom}
+            animate={animateTo}
+            exit={exit}
+            transition={{ duration: 0.5 }}
+            className={HeaderStyle.header_corner_image}
+          >
             <figure>
               <img src="/images/Header/bttersun-modified.png" />
             </figure>
-          </div>
+          </motion.div>
         </div>
       </div>
-      <div className={HeaderStyle.header_corner}>
+      <motion.div
+        initial={animationFrom}
+        animate={animateTo}
+        exit={exit}
+        transition={{ duration: 0.5 }}
+        className={HeaderStyle.header_corner}
+      >
         <div className={HeaderStyle.header_corner_leftbottom}>
           <div>
             <figure>
@@ -41,24 +58,36 @@ const Header = () => {
             </h5>
           </div>
         </div>
-      </div>
+      </motion.div>
       <div className={HeaderStyle.header_main}>
-        <div className={HeaderStyle.header_main_left_piece}>
+        <motion.div
+          initial={animationFrom}
+          animate={animateTo}
+          exit={exit}
+          transition={{ duration: 0.5 }}
+          className={HeaderStyle.header_main_left_piece}
+        >
           <figure>
             <img src="/images/Header/Red_circle.png" />
           </figure>
           <h2>
             <span>H</span>ELLO I'M
           </h2>
-        </div>
-        <div className={HeaderStyle.header_name_information}>
+        </motion.div>
+        <motion.div
+          initial={animationFrom}
+          animate={animateTo}
+          exit={exit}
+          transition={{ duration: 0.5 }}
+          className={HeaderStyle.header_name_information}
+        >
           <h1>
             MOHAMMAD <br /> BAGHERI
           </h1>
           <figure>
             <img src="/images/Header/withoutbackground911.png" />
           </figure>
-        </div>
+        </motion.div>
       </div>
       <div className={HeaderStyle.social_media}>
         <Right_Counter />
