@@ -23,7 +23,7 @@ const Portfolio_SeeMore = () => {
             <a href="https://personal-panel.vercel.app/" target="_blank">
               <figure>
                 <img
-                  src="/images/MyPortfolio/6d9fedbf-c877-497b-9910-321fa29fea4bb.png"
+                  src="/images/MyPortfolio/6d9fedbf-c877-497b-9910-321fa29fea4bb.jpg"
                   alt=""
                 ></img>
               </figure>
@@ -50,7 +50,7 @@ const Portfolio_SeeMore = () => {
             <a href="https://khabar-online.vercel.app/" target="_blank">
               <figure>
                 <img
-                  src="/images/MyPortfolio/8970d2a6-3e46-4778-a421-057c73dfdd461.png"
+                  src="/images/MyPortfolio/8970d2a6-3e46-4778-a421-057c73dfdd461.jpg"
                   alt=""
                 ></img>
               </figure>
@@ -86,7 +86,7 @@ const Portfolio_SeeMore = () => {
             >
               <figure>
                 <img
-                  src="/images/MyPortfolio/b301a931-1358-4450-844e-e35a9cd79569.png"
+                  src="/images/MyPortfolio/b301a931-1358-4450-844e-e35a9cd79569.jpg"
                   alt=""
                 ></img>
               </figure>
@@ -98,7 +98,7 @@ const Portfolio_SeeMore = () => {
             <a href="https://slider-with-jquery.vercel.app/" target="_blank">
               <figure>
                 <img
-                  src="/images/MyPortfolio/55b5a6c9-7db1-4b2c-a111-c39301b35da6.png"
+                  src="/images/MyPortfolio/55b5a6c9-7db1-4b2c-a111-c39301b35da6.jpg"
                   alt=""
                 ></img>
               </figure>

@@ -52,7 +52,7 @@ const MyPortfolio = () => {
             <a href="https://personal-panel.vercel.app/" target="_blank">
               <figure>
                 <img
-                  src="/images/MyPortfolio/6d9fedbf-c877-497b-9910-321fa29fea4bb.png"
+                  src="/images/MyPortfolio/6d9fedbf-c877-497b-9910-321fa29fea4bb.jpg"
                   alt=""
                 ></img>
               </figure>
@@ -79,7 +79,7 @@ const MyPortfolio = () => {
             <a href="https://khabar-online.vercel.app/" target="_blank">
               <figure>
                 <img
-                  src="/images/MyPortfolio/8970d2a6-3e46-4778-a421-057c73dfdd461.png"
+                  src="/images/MyPortfolio/8970d2a6-3e46-4778-a421-057c73dfdd461.jpg"
                   alt=""
                 ></img>
               </figure>
