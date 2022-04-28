@@ -1,12 +1,15 @@
 @media screen and (min-width: 768px) {
+  .ContactMe_items {
+    padding-top: 11vw;
+  }
   .ContactMe_items_information {
     padding-top: 4.5vw;
-    padding-bottom: 13vw;
+    padding-bottom: 17vw;
     flex-wrap: nowrap;
   }
   .information_box {
-    margin-top: 10.3vw;
-    margin-bottom: 0vw;
+    margin-top: 12.3vw;
+    margin-bottom: 16vw;
     figure:nth-of-type(1) {
       img {
         width: 11vw;
@@ -61,7 +64,7 @@
   .social_media {
     > figure {
       top: -12.8vw;
-      right: 12.5vw;
+      right: 14.7vw;
       img {
         width: 29.24vw;
         height: 21vw;

@@ -1,4 +1,13 @@
 @media screen and (min-width: 993px) {
+  .ContactMe_items {
+    padding-top: 7vw;
+  }
+  .ContactMe_items_information {
+    padding-bottom: 13vw;
+  }
+  .information_box {
+    margin-bottom: 12vw;
+  }
   .form {
     figure {
       top: -28vw;
@@ -7,6 +16,11 @@
         width: 26.4862vw;
         height: 35.5vw;
       }
+    }
+  }
+  .social_media {
+    > figure {
+      right: 14vw;
     }
   }
   .corners_page_number {
