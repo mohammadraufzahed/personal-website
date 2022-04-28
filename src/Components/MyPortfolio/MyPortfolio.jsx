@@ -67,7 +67,7 @@ const MyPortfolio = () => {
             >
               <figure>
                 <img
-                  src="/images/MyPortfolio/df611b3d-38da-44bb-83fb-eea2b351863ff.png"
+                  src="/images/MyPortfolio/df611b3d-38da-44bb-83fb-eea2b351863ff.jpg"
                   alt=""
                 ></img>
               </figure>
