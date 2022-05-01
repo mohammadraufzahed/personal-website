@@ -104,9 +104,15 @@ const AboutMe = () => {
       <div className={AboutMeStyle.social_media}>
         <Right_Counter />
       </div>
-      <div className={AboutMeStyle.header_corners_page_number}>
+      <motion.div
+        initial={animationFrom}
+        animate={animateTo}
+        exit={exit}
+        transition={{ duration: 0.5 }}
+        className={AboutMeStyle.header_corners_page_number}
+      >
         <p>02</p>
-      </div>
+      </motion.div>
       <div className={AboutMeStyle.left_line}>
         <span></span>
         <span></span>

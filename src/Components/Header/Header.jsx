@@ -92,9 +92,15 @@ const Header = () => {
       <div className={HeaderStyle.social_media}>
         <Right_Counter />
       </div>
-      <div className={HeaderStyle.header_corners_page_number}>
+      <motion.div
+        initial={animationFrom}
+        animate={animateTo}
+        exit={exit}
+        transition={{ duration: 0.5 }}
+        className={HeaderStyle.header_corners_page_number}
+      >
         <p>01</p>
-      </div>
+      </motion.div>
     </section>
   );
 };

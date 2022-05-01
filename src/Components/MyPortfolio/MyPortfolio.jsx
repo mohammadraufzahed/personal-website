@@ -124,9 +124,15 @@ const MyPortfolio = () => {
           <img src="/images/MyPortfolio/withoutbackground30.png" alt="" />
         </figure>
       </motion.div>
-      <div className={Portfolio.corners_page_number}>
+      <motion.div
+        initial={animationFrom}
+        animate={animateTo}
+        exit={exit}
+        transition={{ duration: 0.5 }}
+        className={Portfolio.corners_page_number}
+      >
         <p>04</p>
-      </div>
+      </motion.div>
     </section>
   );
 };
